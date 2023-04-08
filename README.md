@@ -3,6 +3,7 @@
 -------------
 
 Here's the deployment Link : https://recipe-crud-app.onrender.com
+<a href='https://recipe-crud-app.onrender.com' target="_blank"/>
 
 -------------
 
