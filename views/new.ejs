@@ -1,0 +1,29 @@
+<!-- views/new.ejs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Recipe Manager - New Recipe</title>
+</head>
+
+<body>
+    <h1>New Recipe</h1>
+    <form action="/new" method="post">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div>
+            <label for="description">Description</label>
+            <textarea id="description" name="description"></textarea>
+        </div>
+        <div>
+            <label for="ingredients">Ingredients</label>
+            <textarea id="ingredients" name="ingredients"></textarea>
+        </div>
+        <button type="submit">Save</button>
+    </form>
+</body>
+
+</html>

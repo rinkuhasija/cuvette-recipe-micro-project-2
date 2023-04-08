@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Recipe Manager - Edit Recipe</title>
+    <style>
+        h1 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Edit Recipe</h1>
+    <form action="/<%= recipe._id %>/edit" method="post">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" value="<%= recipe.name %>">
+        </div>
+        <div>
+            <label for="description">Description</label>
+            <textarea id="description" name="description"><%= recipe.description %></textarea>
+        </div>
+        <div>
+            <label for="ingredients">Ingredients</label>
+            <textarea id="ingredients" name="ingredients"><%= recipe.ingredients %></textarea>
+        </div>
+        <button type="submit">Save</button>
+    </form>
+</body>
+
+</html>
