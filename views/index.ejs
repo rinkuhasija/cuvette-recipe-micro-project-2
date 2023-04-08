@@ -48,13 +48,14 @@
     <ul>
         <% recipes.forEach((recipe)=> { %>
             <li>
-                <%= recipe.name %> - <%= recipe.description %>
-                        <form action="/<%= recipe._id %>/delete" method="post">
-                            <button type="submit">Delete</button>
-                        </form>
-                        <form action="/<%= recipe._id %>/edit" method="get">
-                            <button type="submit">Edit</button>
-                        </form>
+                <%= recipe.name %> - <%= recipe.description %> <br>
+                        <br> Ingredients -> <%= recipe.ingredients %>
+                            <form action="/<%= recipe._id %>/delete" method="post">
+                                <button type="submit">Delete</button>
+                            </form>
+                            <form action="/<%= recipe._id %>/edit" method="get">
+                                <button type="submit">Edit</button>
+                            </form>
             </li>
             <% }); %>
                 <a href="/new">Add a New Recipe</a>
